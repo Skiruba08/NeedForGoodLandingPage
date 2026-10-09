@@ -1,0 +1,17 @@
+@font-face { font-family: 'Lora'; src: url('/fonts/lora-variable.woff') format('woff'); font-weight: 400 700; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('/fonts/inter-regular.woff') format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('/fonts/inter-semibold.woff') format('woff'); font-weight: 600; font-display: swap; }
+:root { --bg: #f3f4ef; --ink: #1c2b26; --ink-soft: #4a5752; --line: #d3dacf; --accent: #f2b433; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.0625rem/1.65 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+.back { display: inline-block; margin-bottom: 3rem; font-weight: 600; color: var(--ink); text-underline-offset: 0.2em; }
+h1, h2 { font-family: 'Lora', Georgia, serif; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2rem, 5vw, 2.75rem); margin: 0 0 0.5rem; }
+h2 { font-size: 1.35rem; margin: 2.5rem 0 0.5rem; }
+p, li { color: var(--ink-soft); }
+.updated { margin: 0 0 2rem; font-size: 0.9rem; }
+ul { padding-left: 1.25rem; }
+a { color: var(--ink); }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); font-size: 0.9rem; color: var(--ink-soft); }
